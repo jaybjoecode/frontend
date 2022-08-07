@@ -1,0 +1,54 @@
+@import "~src/styles";
+
+.card-container-horizontal {
+  margin: 10px;
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.card-container-horizontal i {
+  position: absolute;
+  top: 40px;
+  left: -15px;
+  width: 280px;
+  height: 50px;
+  background: $primary;
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+}
+
+.card-container-horizontal i::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  width: 15px;
+  height: 30px;
+  background: $primary-dark;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: 2;
+}
+
+.card-container-horizontal i::after {
+  content: '';
+  position: absolute;
+  top: 50px;
+  width: 15px;
+  height: 15px;
+  background: $primary;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-container-horizontal {
+    margin: 10px 0;
+    width: 200px;
+  }
+
+  .card-container-horizontal i {
+    width: 180px;
+  }
+}

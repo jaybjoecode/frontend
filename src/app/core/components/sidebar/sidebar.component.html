@@ -1,0 +1,60 @@
+<div class="sidebar-container">
+  <div class="navigation">
+    <ul>
+      <li>
+        <a href="#">
+          <span class="icon material-icons">computer</span>
+          <span class="title">Frontend</span>
+        </a>
+      </li>
+      <ng-container *ngFor="let item of items">
+        <li (click)="select(item.id)" [ngClass]="{'selected': item.on}">
+          <a href="#">
+            <span class="icon material-icons">{{item.icon}}</span>
+            <span class="title">{{item.name}}</span>
+          </a>
+        </li>
+      </ng-container>
+      <!-- <li>
+        <a href="#">
+          <span class="icon material-icons">person</span>
+          <span class="title">Customers</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon material-icons">chat</span>
+          <span class="title">Messages</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon material-icons">help</span>
+          <span class="title">Help</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon material-icons">settings</span>
+          <span class="title">Settings</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon material-icons">lock</span>
+          <span class="title">Password</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="icon material-icons">logout</span>
+          <span class="title">Sign Out</span>
+        </a>
+      </li> -->
+    </ul>
+    <div class="toggle">
+      <span class="icon material-icons">logout</span>
+    </div>
+  </div>
+
+</div>
