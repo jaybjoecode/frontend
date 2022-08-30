@@ -6,6 +6,7 @@ import { CardTagDiagonalComponent } from './components/card-tag-diagonal/card-ta
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,6 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     CardTagHorizontalComponent,
     CardSimpleComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, AppRoutingModule],
 })
 export class CoreModule {}

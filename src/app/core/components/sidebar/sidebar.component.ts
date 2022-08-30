@@ -11,27 +11,30 @@ export class SidebarComponent implements OnInit {
       id: 1,
       name: 'Menu 1',
       icon: 'person',
-      on: true
+      on: true,
+      link: '/one',
     },
     {
       id: 2,
       name: 'Menu 2',
       icon: 'assignment',
-      on: false
+      on: false,
+      link: '/two',
     },
     {
       id: 3,
       name: 'Menu 3',
       icon: 'shopping_cart',
-      on: false
+      on: false,
+      link: '/three',
     },
   ];
 
   constructor() {}
 
   select(id: string): void {
-    this.items.forEach(elem => {
-      elem.on = (elem.id === id) ? true : false;
+    this.items.forEach((elem) => {
+      elem.on = elem.id === id ? true : false;
     });
   }
 

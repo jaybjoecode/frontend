@@ -6,9 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PageOneComponent } from './page-one/page-one.component';
 import { CoreModule } from './core/core.module';
+import { PageTwoComponent } from './page-two/page-two.component';
+import { PageThreeComponent } from './page-three/page-three.component';
 
 @NgModule({
-  declarations: [AppComponent, PageOneComponent],
+  declarations: [AppComponent, PageOneComponent, PageTwoComponent, PageThreeComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, CoreModule],
   providers: [],
   bootstrap: [AppComponent],
