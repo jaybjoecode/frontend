@@ -10,3 +10,10 @@
   background: $primary;
   clip-path: circle(600px at right 800px);
 }
+
+
+@media only screen and (max-width: 1000px) {
+  .circle {
+    clip-path: circle(200px at right 800px);
+  }
+}
