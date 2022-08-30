@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -12,21 +13,21 @@ export class SidebarComponent implements OnInit {
       name: 'Menu 1',
       icon: 'person',
       on: true,
-      link: '/one',
+      link: 'one',
     },
     {
       id: 2,
       name: 'Menu 2',
       icon: 'assignment',
       on: false,
-      link: '/two',
+      link: 'two',
     },
     {
       id: 3,
       name: 'Menu 3',
       icon: 'shopping_cart',
       on: false,
-      link: '/three',
+      link: 'three',
     },
   ];
 
