@@ -8,7 +8,6 @@
         </a>
       </li>
       <ng-container *ngFor="let item of items">
-        <!-- <li [routerLink]="{{item.link}}" (click)="select(item.id)" [ngClass]="{'selected': item.on}"> -->
           <li (click)="select(item.id)" [ngClass]="{'selected': item.on}">
           <a [routerLink]="[item.link]">
             <span class="icon material-icons">{{item.icon}}</span>
